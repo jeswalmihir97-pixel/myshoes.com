@@ -1,4 +1,4 @@
-@extends('layout.cmaster')
+@extends('Layout.cmaster')
 
 @section('content')
 <div class="container">
