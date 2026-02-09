@@ -45,8 +45,8 @@ class StockController extends Controller
     
     public function removeProduct($id)
     {
-        $orderItem = OrderItem::findOrFail($id);
-        $orderItem->delete();
+         $product = Product::findOrFail($id);
+         $product->delete();
 
         return redirect()->route('stocks')->with('success', 'Product removed successfully!');
     }
